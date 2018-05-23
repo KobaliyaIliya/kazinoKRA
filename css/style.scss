@@ -1,0 +1,88 @@
+section.inner {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+}
+form {
+  width: 100%;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+input#rate {
+  width: 20%;
+  height: 40%;
+  font-size: 60px;
+  box-sizing: border-box;
+  border: 4px solid #700000;
+  background-color: #F7EFB6;
+  padding-left:5%;
+}
+label {
+  transform: scale(3);
+}
+button.button {
+  width: 20%;
+  height: 40%;
+  font-size: 60px;
+  background-color: #F7EFB6;
+  color: black;
+  box-sizing: border-box;
+  border: 4px solid #700000;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.8s;
+}
+button.button:hover {
+  background: brown;
+  transform:scale(1.2);
+  color:gold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  section.main {
+    min-width: 100vh;
+    min-height: 100vh;
+    background: url('../img/vegas.jpg') no-repeat;
+    background-size: cover;
+    section.machine {
+      position: relative;
+      top: 10vh;
+      div#slot_machine {
+        width: 100%;
+        height: 80vh;
+        background-color: rgba(205, 133, 63, 0.8);
+        border-radius: 10px 10px 10px 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        div#value-box {
+          width: 80%;
+          height: 50%;
+          margin: 0 auto;
+          box-sizing: border-box;
+          border: 1px solid black;
+          display: flex;
+          flex-direction: row;
+          div.value {
+            width: calc((100% / 4));
+            height: 100%;
+            box-sizing: border-box;
+            border: 1px solid #700000;
+            background: #F7EFB6;
+            border-radius: 40px 40px 40px 40px;
+            img.value-img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
